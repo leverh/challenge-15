@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.7rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.header-img img {
+    width: 50%;
+}
+
+.header-links li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cta {
+    margin-top: 5rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-holder img {
+    width: 100%;
+}
+
+.aside-container {
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-container h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;    
+}
+
+.upper p {
+    font-size: 1.6rem;
+}
+
+.cta-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;    
+}
+
+.cta-form form input {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.cta-form form input:first-child {
+    text-align: start;
+    padding-left: 2rem;
+    color: hsl(0, 0%, 75%);
+    font-family: 'Raleway', sans-serif;
+}
+
+/*.cta-form form input:first-child:active {
+    border: 1px rgb(233, 130, 147) solid;
+}*/
+
+.cta-form form input:last-child {
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cta-form form input:last-child:hover {
+    background-color: hsla(224, 93%, 58%, 0.667);
+}
+
+.description {
+    margin-top: 10rem;
+    padding-bottom: 7rem;
+    position: relative;
+    background-color: hsl(240, 75%, 98%);
+}
+
+.back-img {
+    top: -10%;
+    position: absolute;
+    z-index: 1;
+    min-height: 10%;
+}
+
+.back-img-desk {
+    display: none;
+}
+
+.scnd-illu {
+    padding-left: 3rem;
+    z-index: 10;
+    overflow: auto;
+}
+
+.text-container {
+    margin-top: 8rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.text-container h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower p {
+    margin-top: 1.5rem;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    color: hsl(0, 2%, 44%);
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.demo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.underline-helper {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1.5px solid hsl(170, 45%, 43%);
+    padding-bottom: 0.8rem;
+}
+
+.demo a {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.underline-helper:hover {
+    border-bottom: 1.5px solid hsla(170, 45%, 43%, 0.565);
+} 
+.underline-helper a:hover {
+    color: hsla(170, 45%, 43%, 0.565);
+}
+
+
+.testimonial-container {
+    background-color: white;
+    margin: 2.5rem 2.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 1.5rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-container p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.quote {
+    align-self: flex-start;
+    margin-top: 2rem;
+    
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: start;
+    padding-bottom: 2rem;
+}
+
+.person-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.person img {
+    max-width: 13%;
+    border-radius: 50%;
+    
+}
+
+.person-details p {
+    color: hsl(243, 87%, 12%);
+}
+
+.person-details p:first-child {
+    font-weight: bold;
+}
+
+.person-details p:last-child {
+    font-size: 0.8rem;
+}
+
+.cta-2 {
+    background-color: hsl(238, 22%, 44%);
+    padding-bottom: 3.5rem;
+}
+
+.lower-cta {
+    margin-top: 0;
+    padding-top: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.9rem;
+}
+
+.lower-cta h3 {
+    font-size: 1.8rem;
+    color: hsl(240, 75%, 98%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.lower-cta p {
+    font-size: 1.6rem;
+    color: hsl(240, 75%, 98%);
+}
+
+.cta-2 form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.cta-2 form input {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.cta-2 form input:first-child {
+    padding-left: 1rem;
+    color: hsl(0, 3%, 68%);
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cta-2 form input:last-child {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cta-2 form input:last-child:hover {
+    background-color: hsla(224, 93%, 58%, 0.667);
+}
+
+.contact {
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    padding: 5rem 2.5rem 3.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a:hover {
+    color: hsla(224, 83%, 67%, 0.667);
+}
+
+.logo-lower {
+    filter: invert(93%) sepia(0%) saturate(7500%) hue-rotate(104deg) brightness(108%) contrast(107%);
+    margin-bottom: 2.8rem;
+}
+
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5.5rem;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.middle a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+}
+
+.end a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-icon {
+    font-size: 2rem;
+    color: white;
+    fill: currentColor;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.7rem;
+}
+
+.face:hover {
+    color: hsla(224, 83%, 67%, 0.667);
+    border: 1px solid hsla(224, 83%, 67%, 0.667);
+}
+
+.twit:hover {
+    color: hsla(224, 83%, 67%, 0.667);
+    border: 1px solid hsla(224, 83%, 67%, 0.667);
+}
+
+.insta:hover {
+    color: hsla(224, 83%, 67%, 0.667);
+    border: 1px solid hsla(224, 83%, 67%, 0.667);
+}
+
+.attribution { 
+    font-size: 1.5rem; 
+    text-align: center; 
+    padding: 2.5rem;
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+}
+    
+.attribution a { 
+    color: hsl(0, 0%, 75%);
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        padding-top: 3rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .cta {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        padding-bottom: 10rem;
+        place-items: center;
+    }
+
+    .image-holder {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+
+    .aside-container {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .cta-form {
+        padding-left: 2.5rem;
+    }
+
+    .cta-form form{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .cta-form form input:first-child {
+        padding-left: 2rem;
+        color: hsl(0, 0%, 75%);
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .cta-form form input:last-child {
+        background-color: hsl(224, 93%, 58%);
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .back-img {
+       display: none;
+       
+    }
+
+    .description {
+        position: relative;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        overflow: visible;
+    }
+
+    .back-img-desk {
+        position: absolute;
+        display: inline-block;  
+        top: -9%;
+        right: 1%;
+        visibility: visible;
+        
+    }
+
+    .lower {
+        margin-top: 0;
+        text-align: left;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .lower h1 {
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
+
+    .scnd-illu {
+        max-width: 50rem;
+        padding-top: 10rem; 
+        
+    }
+
+    .demo {
+        align-self: flex-start;
+    }
+
+    .testimonial-container {
+        margin: 5rem;
+        padding: 2rem;
+    }
+
+    .cta-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .lower-cta {
+        text-align: left;
+        margin-top: 2.5rem;
+    }
+
+    .lower-cta h3 {
+        padding: 0;
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    .cta-2 form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+
+
+    .cta-2 form input:last-child {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        width: 40%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .middle {
+        margin-top: 7.5rem;
+    }
+
+    .end {
+        margin-top: 7.5rem;
+    }
+
+    .social {
+        margin-top: 7.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .cta-form input:first-child {
+        padding-left: 3rem;
+        padding-right: 6rem;
+    }
+
+    .lower {
+        margin-bottom: 0;
+    }
+
+    .testimonial-container {
+        margin-top: 0;
+        width: 40rem;
+    }
+
+    .lower-cta {
+        padding-left: 2.5rem;
+        padding-right: 0;
+    }
+
+    .lower-cta p {
+        width: 60%;
+        align-self: flex-start;
+    }
+
+    .cta-2 {
+        padding-left: 0;
+    }
+
+    .cta-2 form {
+        padding-left: 0;
+        margin-left: 0;
+        align-self: left;
+    }
+}
+
+
+
+
+
+
+
+
